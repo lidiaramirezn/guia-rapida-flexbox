@@ -1,0 +1,198 @@
+
+		
+
+		body {
+			background: #E9E9E9;
+
+		}
+
+		.contenedor { 
+			width: 500px;
+			height: 200px;
+			background: #FFF;
+			padding: 10px;
+			border: 10px solid #2C3E50;
+			margin: 20px;
+		}
+
+		.elemento {
+			color: #FFF;
+			margin: 5px;
+			background: #E67E22;
+			text-align: center;
+			
+			/*height: 50px;*/
+		}
+
+		.element-flex1 {
+			width: 50px;
+			height: 50px;
+		}
+
+		.flex-content1 {
+			display: flex;
+			/* flex-direction: row | column | row-reverse | column-reverse*/
+			flex-direction: column;
+		}
+
+		.flex-content2 {
+			display: flex;
+			/* Si un elemento no cabe lo baja si es wrap, si es no-wrap se ajusta a una linea no respeta el ancho y no los centra, va de izquierda a derecha*/
+			/* flex-wrap: no-wrap | wrap | wrap-reverse */
+			flex-wrap: wrap;
+		}
+
+		.element-flex2 {
+			width: 200px;
+			height: 50px;
+		}
+		
+		.flex-content3 {
+			display: flex;
+			/* flex-flow: Es un atajo de flex-direction y flex-wrap */
+			flex-flow: row wrap;
+		}
+
+		.element-flex3 {
+			width: 50px;
+			height: 50px;
+		}
+
+		.flex-content4 {
+			display: flex;
+			/* justify-content: flex-start | flex-end | center | space-around | space-between */
+			justify-content: flex-end;
+		}
+
+		.element-flex4 {
+			width: 50px;
+			height: 50px;
+		}
+
+		.flex-content5 {
+			display: flex;
+			justify-content: center;
+		}
+
+		.element-flex5 {
+			width: 50px;
+			height: 50px;
+		}
+
+		.flex-content6 {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.element-flex6 {
+			width: 50px;
+			height: 50px;
+		}
+		
+		.flex-content7 {
+			display: flex;
+			justify-content: space-between;
+		}
+		.element-flex7 {
+			width: 50px;
+			height: 50px;
+		}
+		.flex-content8 {
+			display: flex;
+			justify-content: space-between;
+		}
+		.element-flex8 {
+			width: 50px;
+			height: 50px;
+		}
+		.flex-content9 {
+			display: flex;
+			height: 400px;
+			/* Posicionar verticalmente, en una sola linea */
+			/* align-items: flex-start | flex-end | center | stretch | baseline */
+			align-items: flex-end;
+			justify-content: center;
+		}
+		.element-flex9 {
+			width: 50px;
+			height: 50px;
+		}
+		.flex-content10 {
+			display: flex;
+			align-items: center;
+		}
+		.element-flex10 {
+			width: 50px;
+			height: 50px;
+		}
+		.flex-content11 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.element-flex11 {
+			width: 50px;
+			height: 50px;
+		}
+		.flex-content12 {
+			display: flex;
+			justify-content: center;
+			/* abarca el 100% de vertical */
+			align-items: stretch;
+		}
+		.element-flex12 {
+			width: 50px;
+			/*altura automatico;*/
+		}
+		.flex-content13 {
+			display: flex;
+			/* el CONTENIDO de su elemento esta alineado*/
+			align-items:baseline;
+		}
+		.elemento2 {
+			font-size: 60px;
+		}
+		.element-flex13 {
+			width: 50px;
+			
+		}
+		.flex-content14 {
+			height: 500px;
+			display: flex;
+			
+			flex-wrap: wrap;
+			justify-content: center;
+			/* Alinea grupos de elementos*/
+			/* align-content: flex-start | flex-end | center | stretch | space-between | space-around */
+			align-content: center;
+		}
+		.element-flex14 {
+			width: 200px;
+			height: 50px;
+		}
+		.flex-content15 {
+			height: 500px;
+			display: flex;
+			
+			flex-wrap: wrap;
+			justify-content: center;
+			align-content: flex-end;
+		}
+		.element-flex15 {
+			width: 200px;
+			height: 50px;
+		}
+		.flex-content16 {
+			height: 200px;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+		}
+		.element-flex16 {
+			width: 50px;
+			height: 50px;
+		}
+		.elemento3 {
+			/* align-self: flex-start | flex-end | center | stretch | baseline */
+			align-self: flex-end;
+		}
