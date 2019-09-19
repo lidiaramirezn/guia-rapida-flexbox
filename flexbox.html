@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Guía Rápida | Flexbox</title>
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="base.css">
-	<link rel="stylesheet" href="flexbox.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/flexbox.css">
 </head>
 <body>
 	<header class="header">
@@ -19,131 +19,161 @@
 			<li class="header-right">By LRN</li>
 		</ul>
 	</header>
-	<main class="main">
-		<div class="main-banner">
-			<img class="main-img" src="assets/icon/css3.svg" alt="">
-			<h1 class="main-title">Guía rápida: Flexbox</h1>
-		</div>
-		<p class="main-description"></p>
-	</main>
-	<section class="section-examples">
-		<div class="example">
-			<h2>Flex-direction</h2>
-			<div class="contenedor flex-content1">
-				<div class="elemento element-flex1">1</div>
-				<div class="elemento element-flex1">2</div>
-				<div class="elemento element-flex1">3</div>
-				<div class="elemento element-flex1">4</div>
+	<div class="container">
+		<main class="main">
+			<div class="main-banner">
+				<img class="main-img" src="assets/icon/css3.svg" alt="">
+				<h1 class="main-title">Guía rápida: Flexbox</h1>
 			</div>
-		</div>
-		<div class="example">
-			<h2>Ejemplo: flex-wrap</h2>
-			<div class="contenedor flex-content2">
-				<div class="elemento element-flex2">1</div>
-				<div class="elemento element-flex2">2</div>
-				<div class="elemento element-flex2">3</div>
-				<div class="elemento element-flex2">4</div>
+			<div class="main-definition">
+				<img class="main-definition-img" src="assets/flex-direction.png" alt="">
+				<p class="main-description"></p>
 			</div>
-		</div>
-		<div class="example">
-			<h2>Ejemplo: flex-flow</h2>
-			<div class="contenedor flex-content3">
-				<div class="elemento element-flex3">1</div>
-				<div class="elemento element-flex3">2</div>
-				<div class="elemento element-flex3">3</div>
-				<div class="elemento element-flex3">4</div>
+		</main>
+		<section class="section-examples">
+			<div class="example">
+				<h2>Flex-direction</h2>
+				<div class="contenedor flex-content1">
+					<div class="elemento element-flex1">1</div>
+					<div class="elemento element-flex1">2</div>
+					<div class="elemento element-flex1">3</div>
+					<div class="elemento element-flex1">4</div>
+				</div>
 			</div>
-		</div>
-		
-	</section>
-	<h1>Ejemplo: justify-content:flex-end </h1>
-	<div class="contenedor flex-content4">
-		<div class="elemento element-flex4">1</div>
-		<div class="elemento element-flex4">2</div>
-		<div class="elemento element-flex4">3</div>
-		<div class="elemento element-flex4">4</div>
-	</div>
-	<h1>Ejemplo: justify-content:center</h1>
-	<div class="contenedor flex-content5">
-		<div class="elemento element-flex5">1</div>
-		<div class="elemento element-flex5">2</div>
-		<div class="elemento element-flex5">3</div>
-		<div class="elemento element-flex5">4</div>
-	</div>
-	<h1>Ejemplo: justify-content:space-around</h1>
-	<div class="contenedor flex-content6">
-		<div class="elemento element-flex6">1</div>
-		<div class="elemento element-flex6">2</div>
-		<div class="elemento element-flex6">3</div>
-		<div class="elemento element-flex6">4</div>
-	</div>
-	<h1>Ejemplo: justify-content:space-between</h1>
-	<div class="contenedor flex-content7">
-		<div class="elemento element-flex7">1</div>
-		<div class="elemento element-flex7">2</div>
-		<div class="elemento element-flex7">3</div>
-		<div class="elemento element-flex7">4</div>
-	</div>
-	<h1>Ejemplo: justify-content:space-between</h1>
-	<div class="contenedor flex-content8">
-		<div class="elemento element-flex8">1</div>
-		<div class="elemento element-flex8">2</div>
-	</div>
-	<h1>Ejemplo: align-items:flex-end y justify-content:center</h1>
-	<div class="contenedor flex-content9">
-		<div class="elemento element-flex9">1</div>
-		<div class="elemento element-flex9">2</div>
-		<div class="elemento element-flex9">3</div>
-		<div class="elemento element-flex9">4</div>
-	</div>
-	<h1>Ejemplo: align-items:center</h1>
-	<div class="contenedor flex-content10">
-		<div class="elemento element-flex10">1</div>
-		<div class="elemento element-flex10">2</div>
-		<div class="elemento element-flex10">3</div>
-		<div class="elemento element-flex10">4</div>
-	</div>
-	<h1>Ejemplo: align-items y justify-content:center</h1>
-	<div class="contenedor flex-content11">
-		<div class="elemento element-flex11">1</div>
-		<div class="elemento element-flex11">2</div>
-		<div class="elemento element-flex11">3</div>
-		<div class="elemento element-flex11">4</div>
-	</div>
-	<h1>Ejemplo: align-items:stretch</h1>
-	<div class="contenedor flex-content12">
-		<div class="elemento element-flex12">1</div>
-		<div class="elemento element-flex12">2</div>
-		<div class="elemento element-flex12">3</div>
-		<div class="elemento element-flex12">4</div>
-	</div>
-	<h1>Ejemplo: align-items:baseline</h1>
-	<div class="contenedor flex-content13">
-		<div class="elemento element-flex13">1</div>
-		<div class="elemento element-flex13 elemento2">2</div>
-		<div class="elemento element-flex13">3</div>
-		<div class="elemento element-flex13">4</div>
-	</div>
-	<h1>Ejemplo: align-content:center</h1>
-	<div class="contenedor flex-content14">
-		<div class="elemento element-flex14">1</div>
-		<div class="elemento element-flex14">2</div>
-		<div class="elemento element-flex14">3</div>
-		<div class="elemento element-flex14">4</div>
-	</div>
-	<h1>Ejemplo: align-content: flex-end</h1>
-	<div class="contenedor flex-content15">
-		<div class="elemento element-flex15">1</div>
-		<div class="elemento element-flex15">2</div>
-		<div class="elemento element-flex15">3</div>
-		<div class="elemento element-flex15">4</div>
-	</div>
-	<h1>Ejemplo: align-self: flex-end</h1>
-	<div class="contenedor flex-content16">
-		<div class="elemento element-flex16">1</div>
-		<div class="elemento element-flex16">2</div>
-		<div class="elemento element-flex16 elemento3">3</div>
-		<div class="elemento element-flex16">4</div>
+			<div class="example">
+				<h2>flex-wrap</h2>
+				<div class="contenedor flex-content2">
+					<div class="elemento element-flex2">1</div>
+					<div class="elemento element-flex2">2</div>
+					<div class="elemento element-flex2">3</div>
+					<div class="elemento element-flex2">4</div>
+				</div>
+			</div>
+			<div class="example">
+				<h2>flex-flow</h2>
+				<div class="contenedor flex-content3">
+					<div class="elemento element-flex3">1</div>
+					<div class="elemento element-flex3">2</div>
+					<div class="elemento element-flex3">3</div>
+					<div class="elemento element-flex3">4</div>
+				</div>
+			</div>
+			<div class="example">
+				<h2>justify-content:flex-end </h2>
+				<div class="contenedor flex-content4">
+					<div class="elemento element-flex4">1</div>
+					<div class="elemento element-flex4">2</div>
+					<div class="elemento element-flex4">3</div>
+					<div class="elemento element-flex4">4</div>
+				</div>
+			</div>
+			<div class="example">
+				<h2>Ejemplo: justify-content:center</h2>
+				<div class="contenedor flex-content5">
+					<div class="elemento element-flex5">1</div>
+					<div class="elemento element-flex5">2</div>
+					<div class="elemento element-flex5">3</div>
+					<div class="elemento element-flex5">4</div>
+				</div>
+			</div>
+			<div class="example">
+				<h2>Ejemplo: justify-content:space-around</h2>
+				<div class="contenedor flex-content6">
+					<div class="elemento element-flex6">1</div>
+					<div class="elemento element-flex6">2</div>
+					<div class="elemento element-flex6">3</div>
+					<div class="elemento element-flex6">4</div>
+				</div>
+			</div>
+			<div class="example">
+				<h2>Ejemplo: justify-content:space-between</h2>
+				<div class="contenedor flex-content7">
+					<div class="elemento element-flex7">1</div>
+					<div class="elemento element-flex7">2</div>
+					<div class="elemento element-flex7">3</div>
+					<div class="elemento element-flex7">4</div>
+				</div>
+			</div>
+			<div class="example">
+				<h2>Ejemplo: justify-content:space-between</h2>
+				<div class="contenedor flex-content8">
+					<div class="elemento element-flex8">1</div>
+					<div class="elemento element-flex8">2</div>
+				</div>
+			</div>
+			<div class="example">
+				<h2>Ejemplo: align-items:flex-end y justify-content:center</h2>
+				<div class="contenedor flex-content9">
+					<div class="elemento element-flex9">1</div>
+					<div class="elemento element-flex9">2</div>
+					<div class="elemento element-flex9">3</div>
+					<div class="elemento element-flex9">4</div>
+				</div>
+			</div>
+			<div class="example">
+				<h2>Ejemplo: align-items:center</h2>
+				<div class="contenedor flex-content10">
+					<div class="elemento element-flex10">1</div>
+					<div class="elemento element-flex10">2</div>
+					<div class="elemento element-flex10">3</div>
+					<div class="elemento element-flex10">4</div>
+				</div>
+			</div>
+			<div class="example">
+				<h2>Ejemplo: align-items y justify-content:center</h2>
+				<div class="contenedor flex-content11">
+					<div class="elemento element-flex11">1</div>
+					<div class="elemento element-flex11">2</div>
+					<div class="elemento element-flex11">3</div>
+					<div class="elemento element-flex11">4</div>
+				</div>
+			</div>
+			<div class="example">
+				<h2>Ejemplo: align-items:stretch</h2>
+				<div class="contenedor flex-content12">
+					<div class="elemento element-flex12">1</div>
+					<div class="elemento element-flex12">2</div>
+					<div class="elemento element-flex12">3</div>
+					<div class="elemento element-flex12">4</div>
+				</div>
+			</div>
+			<div class="example">
+				<h2>Ejemplo: align-items:baseline</h2>
+				<div class="contenedor flex-content13">
+					<div class="elemento element-flex13">1</div>
+					<div class="elemento element-flex13 elemento2">2</div>
+					<div class="elemento element-flex13">3</div>
+					<div class="elemento element-flex13">4</div>
+				</div>
+			</div>
+			<div class="example">
+				<h2>Ejemplo: align-content:center</h2>
+				<div class="contenedor flex-content14">
+					<div class="elemento element-flex14">1</div>
+					<div class="elemento element-flex14">2</div>
+					<div class="elemento element-flex14">3</div>
+					<div class="elemento element-flex14">4</div>
+				</div>
+			</div>
+			<div class="example">
+				<h2>Ejemplo: align-content: flex-end</h2>
+				<div class="contenedor flex-content15">
+					<div class="elemento element-flex15">1</div>
+					<div class="elemento element-flex15">2</div>
+					<div class="elemento element-flex15">3</div>
+					<div class="elemento element-flex15">4</div>
+				</div>
+			</div>
+			<div class="example">
+				<h2>Ejemplo: align-self: flex-end</h2>
+				<div class="contenedor flex-content16">
+					<div class="elemento element-flex16">1</div>
+					<div class="elemento element-flex16">2</div>
+					<div class="elemento element-flex16 elemento3">3</div>
+					<div class="elemento element-flex16">4</div>
+				</div>
+			</div>
+		</section>
 	</div>
 </body>
 </html>
