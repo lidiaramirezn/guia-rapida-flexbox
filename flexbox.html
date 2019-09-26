@@ -38,7 +38,7 @@
 		</main>
 		<section>
 			<h2 class="main-subtitle">Flex container</h2>
-			<p>Se debe definir el contexto en bloque o línea</p>
+			<p>Se debe definir si el padre contenedor trabajará en bloque o línea</p>
 			<code class="code">
 				<span class="selector">.container </span>
 				{
@@ -54,7 +54,7 @@
 		</section>
 		<section>
 			<h2 class="main-subtitle">flex-direction</h2>
-			<p>Permite establecer la dirección del eje principal</p>
+			<p>Permite establecer la dirección del eje principal. Su valor predeterminado es flex-direction: row</p>
 			<code class="code">
 				<span class="selector">
 				.container </span>{
@@ -91,7 +91,10 @@
 		</section>
 		<section>
 			<h2 class="main-subtitle">flex-wrap</h2>
-			<p>Permite determinar si puede saltarse de línea si no encaja en una línea, respetando los tamaños de los items. Caso contrario no salta de línea pero redimensiona los items</p>
+			<p>Su valor predeterminado de flex-wrap es nowrap</p>
+			<p>- wrap: Permite determinar si puede saltar de línea los elementos si no encaja en una línea, respetando los tamaños de los items. </p>
+			<p>- nowrap: No salta de línea pero redimensiona los items haciendo encajar en una línea.</p>
+			<p>- wrap-reverse: Las filas son opuestas más no los items.</p>
 			<code class="code">
 				<span class="selector">
 				.container </span>{
@@ -119,17 +122,26 @@
 			</div>
 		</section>		
 		<section>
-			<div class="example">
-				<h2>flex-flow</h2>
-				<div class="contenedor flex-content3">
-					<div class="elemento element-flex3">1</div>
-					<div class="elemento element-flex3">2</div>
-					<div class="elemento element-flex3">3</div>
-					<div class="elemento element-flex3">4</div>
-				</div>
+			<h2 class="main-subtitle">flex-flow</h2>
+			<p>Es el shorthand de flex-direction y flex-wrap. El valor por defecto es flex-flow: row nowrap</p>
+			<p>Ejemplo: flex-flow: row wrap-reverse</p>
+			<div class="contenedor flex-content3">
+				<div class="elemento element-flex3">1</div>
+				<div class="elemento element-flex3">2</div>
+				<div class="elemento element-flex3">3</div>
+				<div class="elemento element-flex3">4</div>
 			</div>
+		</section>
+		<section>
+			<h2 class="main-subtitle">justify-content</h2>
+			<p>Alinea los items en el eje principal que estan dentro de un contenedor. El valor por defecto es justify-content: flex-start</p>
 			<div class="example">
-				<h2>justify-content:flex-end </h2>
+				<code class="code">
+					<span class="selector">
+					.container </span>{
+						<span class="property">justify-content</span>: <span class="value">flex-end</span>;
+					}
+				</code>
 				<div class="contenedor flex-content4">
 					<div class="elemento element-flex4">1</div>
 					<div class="elemento element-flex4">2</div>
@@ -138,7 +150,12 @@
 				</div>
 			</div>
 			<div class="example">
-				<h2>Ejemplo: justify-content:center</h2>
+				<code class="code">
+					<span class="selector">
+					.container </span>{
+						<span class="property">justify-content</span>: <span class="value">center</span>;
+					}
+				</code>	
 				<div class="contenedor flex-content5">
 					<div class="elemento element-flex5">1</div>
 					<div class="elemento element-flex5">2</div>
@@ -147,7 +164,12 @@
 				</div>
 			</div>
 			<div class="example">
-				<h2>Ejemplo: justify-content:space-around</h2>
+				<code class="code">
+					<span class="selector">
+					.container </span>{
+						<span class="property">justify-content</span>: <span class="value">space-around</span>;
+					}
+				</code>	
 				<div class="contenedor flex-content6">
 					<div class="elemento element-flex6">1</div>
 					<div class="elemento element-flex6">2</div>
@@ -156,23 +178,31 @@
 				</div>
 			</div>
 			<div class="example">
-				<h2>Ejemplo: justify-content:space-between</h2>
+				<code class="code">
+					<span class="selector">
+					.container </span>{
+						<span class="property">justify-content</span>: <span class="value">space-between</span>;
+					}
+				</code>	
 				<div class="contenedor flex-content7">
 					<div class="elemento element-flex7">1</div>
 					<div class="elemento element-flex7">2</div>
 					<div class="elemento element-flex7">3</div>
 					<div class="elemento element-flex7">4</div>
 				</div>
-			</div>
-			<div class="example">
-				<h2>Ejemplo: justify-content:space-between</h2>
 				<div class="contenedor flex-content8">
 					<div class="elemento element-flex8">1</div>
 					<div class="elemento element-flex8">2</div>
 				</div>
 			</div>
 			<div class="example">
-				<h2>Ejemplo: align-items:flex-end y justify-content:center</h2>
+				<code class="code">
+					<span class="selector">
+					.container </span>{
+						<span class="property">justify-content</span>: <span class="value">space-evenly</span>;
+					}
+				</code>
+				<p>Los elementos se distribuyen de modo que el espacio entre dos elementos (y el espacio hasta los bordes) sea igual.</p>
 				<div class="contenedor flex-content9">
 					<div class="elemento element-flex9">1</div>
 					<div class="elemento element-flex9">2</div>
@@ -180,6 +210,17 @@
 					<div class="elemento element-flex9">4</div>
 				</div>
 			</div>
+		</section>	
+		<section>
+			<h2 class="main-subtitle">align-items</h2>
+			<p>Alinea los items en el eje secundario. El valor por defecto es </p>
+		</section>
+		<section>
+			<h2 class="main-subtitle">align-content</h2>
+			<p>Alinea los las líneas. El valor por defecto es </p>
+		</section>
+		<section>
+			
 			<div class="example">
 				<h2>Ejemplo: align-items:center</h2>
 				<div class="contenedor flex-content10">
@@ -241,6 +282,15 @@
 					<div class="elemento element-flex16">2</div>
 					<div class="elemento element-flex16 elemento3">3</div>
 					<div class="elemento element-flex16">4</div>
+				</div>
+			</div>
+			<div class="example">
+				<h2>Ejemplo: align-items:flex-end y justify-content:center</h2>
+				<div class="contenedor flex-content17">
+					<div class="elemento element-flex17">1</div>
+					<div class="elemento element-flex17">2</div>
+					<div class="elemento element-flex17">3</div>
+					<div class="elemento element-flex17">4</div>
 				</div>
 			</div>
 		</section>
