@@ -129,6 +129,18 @@
 			margin: 0;
 		}
 
+		.contenedor.flex-content10 {
+			display: flex;
+			height: 120px;
+			padding: 5px 0;
+			align-items: center;
+		}
+
+		.element-flex10 {
+			width: 30px;
+			height: 30px;
+		}
+
 		.flex-content17 {
 			display: flex;
 			height: 400px;
@@ -141,14 +153,8 @@
 			width: 50px;
 			height: 50px;
 		}
-		.flex-content10 {
-			display: flex;
-			align-items: center;
-		}
-		.element-flex10 {
-			width: 50px;
-			height: 50px;
-		}
+
+		
 		.flex-content11 {
 			display: flex;
 			justify-content: center;
