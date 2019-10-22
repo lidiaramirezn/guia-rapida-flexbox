@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Guía Rápida | Flexbox</title>
-	<link rel="icon" type="image/jpg" href="/assets/icon/css3.jpg">
+	<link rel="icon" type="image/png" href="/assets/icon/css3.png">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/flexbox.css">
@@ -30,7 +30,7 @@
 					<ul>
 						<li>- Flex container</li>
 						<li>- Flex Items<li>
-						<li>- Ejes: main axis (eje principal), cross axis (eje secundario), main size, cross size, main start, main end, cross start, cross end</li>
+						<li>- Ejes: main axis <strong>(eje principal)</strong>, cross axis <strong>(eje secundario)</strong>, main size, cross size, main start, main end, cross start, cross end</li>
 					</ul>
 				</p>
 				<img  class="main-definition-img" src="assets/img/flex-components.jpg" alt="">				
@@ -92,9 +92,9 @@
 		<section>
 			<h2 class="main-subtitle">flex-wrap</h2>
 			<p>Su valor predeterminado de flex-wrap es nowrap</p>
-			<p>- wrap: Permite determinar si puede saltar de línea los elementos si no encaja en una línea, respetando los tamaños de los items. </p>
-			<p>- nowrap: No salta de línea pero redimensiona los items haciendo encajar en una línea.</p>
-			<p>- wrap-reverse: Las filas son opuestas más no los items.</p>
+			<p>- <strong>wrap:</strong> Permite determinar si puede saltar de línea los elementos si no encaja en una línea, respetando los tamaños de los items. </p>
+			<p>- <strong>nowrap:</strong> No salta de línea pero redimensiona los items haciendo encajar en una línea.</p>
+			<p>- <strong>wrap-reverse:</strong> Las filas son opuestas más no los items.</p>
 			<code class="code">
 				<span class="selector">
 				.container </span>{
@@ -164,6 +164,7 @@
 				</div>
 			</div>
 			<div class="example">
+				<p>Los elementos se distribuyen uniformemente con igual espacio a su alrededor.</p>
 				<code class="code">
 					<span class="selector">
 					.container </span>{
@@ -176,8 +177,13 @@
 					<div class="elemento element-flex6">3</div>
 					<div class="elemento element-flex6">4</div>
 				</div>
+				<div class="contenedor flex-content6">
+						<div class="elemento element-flex6">1</div>
+						<div class="elemento element-flex6">2</div>
+					</div>
 			</div>
 			<div class="example">
+				<p>Los elementos se distribuyen uniformemente entre elementos.  El primer elemento se coloca al inicio, el último elemento al final</p>
 				<code class="code">
 					<span class="selector">
 					.container </span>{
@@ -190,9 +196,9 @@
 					<div class="elemento element-flex7">3</div>
 					<div class="elemento element-flex7">4</div>
 				</div>
-				<div class="contenedor flex-content8">
-					<div class="elemento element-flex8">1</div>
-					<div class="elemento element-flex8">2</div>
+				<div class="contenedor flex-content7">
+					<div class="elemento element-flex7">1</div>
+					<div class="elemento element-flex7">2</div>
 				</div>
 			</div>
 			<div class="example">
@@ -202,12 +208,12 @@
 						<span class="property">justify-content</span>: <span class="value">space-evenly</span>;
 					}
 				</code>
-				<p>Los elementos se distribuyen de modo que el espacio entre dos elementos (y el espacio hasta los bordes) sea igual.</p>
-				<div class="contenedor flex-content9">
-					<div class="elemento element-flex9">1</div>
-					<div class="elemento element-flex9">2</div>
-					<div class="elemento element-flex9">3</div>
-					<div class="elemento element-flex9">4</div>
+				<p>Los elementos se distribuyen de modo que el espacio entre los elementos sea igual.</p>
+				<div class="contenedor flex-content8">
+					<div class="elemento element-flex8">1</div>
+					<div class="elemento element-flex8">2</div>
+					<div class="elemento element-flex8">3</div>
+					<div class="elemento element-flex8">4</div>
 				</div>
 			</div>
 		</section>	
@@ -221,6 +227,20 @@
 						<span class="property">align-items</span>: <span class="value">center</span>;
 					}
 				</code>
+				<div class="contenedor flex-content9">
+					<div class="elemento element-flex9">1</div>
+					<div class="elemento element-flex9">2</div>
+					<div class="elemento element-flex9">3</div>
+					<div class="elemento element-flex9">4</div>
+				</div>
+			</div>
+			<div class="example">
+				<code class="code">
+					<span class="selector">
+					.container </span>{
+						<span class="property">align-items</span>: <span class="value">flex-end</span>;
+					}
+				</code>
 				<div class="contenedor flex-content10">
 					<div class="elemento element-flex10">1</div>
 					<div class="elemento element-flex10">2</div>
@@ -228,35 +248,29 @@
 					<div class="elemento element-flex10">4</div>
 				</div>
 			</div>
-			<div>
+			<div class="example">
+				<p>Se estira los elementos para llenar el contenedor en el eje secundario. Por lo que los elementos no deben tener un tamaño definido en el eje secundario.</p>
 				<code class="code">
 					<span class="selector">
 					.container </span>{
-						<span class="property">align-items</span>: <span class="value">center</span>;
+						<span class="property">align-items</span>: <span class="value">stretch</span>;
 					}
 				</code>
-			</div>
-		</section>
-		<section>
-			<h2 class="main-subtitle">align-content</h2>
-			<p>Alinea los las líneas. El valor por defecto es </p>
-		</section>
-		<br>
-		<br>
-		<section>
-			
-			
-			<div class="example">
-				<h2>Ejemplo: align-items y justify-content:center</h2>
 				<div class="contenedor flex-content11">
 					<div class="elemento element-flex11">1</div>
 					<div class="elemento element-flex11">2</div>
 					<div class="elemento element-flex11">3</div>
 					<div class="elemento element-flex11">4</div>
 				</div>
-			</div>
-			<div class="example">
-				<h2>Ejemplo: align-items:stretch</h2>
+
+				<code class="code">
+					<span class="selector">
+					.container </span>{
+						<span class="property">flex-direction</span>: <span class="value">column </span>;&nbsp;
+						
+						<span class="property">align-items</span>: <span class="value">stretch</span>;
+					}
+				</code>
 				<div class="contenedor flex-content12">
 					<div class="elemento element-flex12">1</div>
 					<div class="elemento element-flex12">2</div>
@@ -265,51 +279,33 @@
 				</div>
 			</div>
 			<div class="example">
-				<h2>Ejemplo: align-items:baseline</h2>
+				<code class="code">
+					<span class="selector">
+					.container </span>{
+						<span class="property">align-items</span>: <span class="value">baseline</span>;
+					}
+				</code>
 				<div class="contenedor flex-content13">
 					<div class="elemento element-flex13">1</div>
-					<div class="elemento element-flex13 elemento2">2</div>
+					<div class="elemento element-flex13">2</div>
 					<div class="elemento element-flex13">3</div>
 					<div class="elemento element-flex13">4</div>
 				</div>
 			</div>
-			<div class="example">
-				<h2>Ejemplo: align-content:center</h2>
-				<div class="contenedor flex-content14">
-					<div class="elemento element-flex14">1</div>
-					<div class="elemento element-flex14">2</div>
-					<div class="elemento element-flex14">3</div>
-					<div class="elemento element-flex14">4</div>
-				</div>
-			</div>
-			<div class="example">
-				<h2>Ejemplo: align-content: flex-end</h2>
-				<div class="contenedor flex-content15">
-					<div class="elemento element-flex15">1</div>
-					<div class="elemento element-flex15">2</div>
-					<div class="elemento element-flex15">3</div>
-					<div class="elemento element-flex15">4</div>
-				</div>
-			</div>
-			<div class="example">
-				<h2>Ejemplo: align-self: flex-end</h2>
-				<div class="contenedor flex-content16">
-					<div class="elemento element-flex16">1</div>
-					<div class="elemento element-flex16">2</div>
-					<div class="elemento element-flex16 elemento3">3</div>
-					<div class="elemento element-flex16">4</div>
-				</div>
-			</div>
-			<div class="example">
-				<h2>Ejemplo: align-items:flex-end y justify-content:center</h2>
-				<div class="contenedor flex-content17">
-					<div class="elemento element-flex17">1</div>
-					<div class="elemento element-flex17">2</div>
-					<div class="elemento element-flex17">3</div>
-					<div class="elemento element-flex17">4</div>
-				</div>
-			</div>
+		</section>
+		<section>
+			<h2 class="main-subtitle">align-content</h2>
+			<p>Alinea los las líneas. El valor por defecto es </p>
+		</section>		
+
+		<!-- final -->
+		<section class="section-additional">
+			<h2 class="">Adicionales</h2> 
+			<p>* Video muy recomendado para entender Flexbox: <a target="_blank" class="link" href="https://www.youtube.com/watch?v=_YUJ37FARrU">Link</a></p>
+			<p>* Guía muy completa en inglés: <a target="_blank" class="link" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Link</a></p>
+
 		</section>
 	</div>
+	
 </body>
 </html>

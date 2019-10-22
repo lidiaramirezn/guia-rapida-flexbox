@@ -141,7 +141,7 @@ h1, h2, h3 {
 
 @media (min-width: 768px) {
   .container { max-width: 760px; }
-  .main-definition-img { max-width: 500px;}
+  .main-definition-img { max-width: 450px;}
   .main-description { margin: 20px auto; }
 }
 
