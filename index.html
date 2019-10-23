@@ -6,6 +6,15 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Guía Rápida | Flexbox</title>
 	<link rel="icon" type="image/png" href="/assets/icon/css3.png">
+	<meta name="title" content="Guía Rápida de Flexbox">
+	<meta name="description" content="Guía de propiedades más relevantes de Flexbox."/>
+	<meta property="og:title" content="Guía Rápida de Flexbox" />
+	<meta property="og:description" content="Guía de propiedades más relevantes de Flexbox."/>
+	<meta property="og:image" content="assets/img/flexbox.jpeg" />
+	<meta name="twitter:title" content="Guía Rápida de Flexbox">	
+	<meta name="twitter:description" content="Guía de propiedades más relevantes de Flexbox.">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="img/git.png">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/flexbox.css">
@@ -92,8 +101,7 @@
 					<div class="element element-flex1">4</div>
 				</div>
 			</div>
-		</section>
-		
+		</section>		
 		<section>
 			<h2 class="main-subtitle">justify-content</h2>
 			<p>Alinea los items en el <strong>eje principal</strong> que estan dentro de un contenedor. El valor por defecto es justify-content: flex-start. Otras opciones:</p>
@@ -347,10 +355,51 @@
 				</div>
 			</div>
 		</section>	
+		<section>
+			<h2 class="main-subtitle">flex-grow</h2>
+			<p>Se le asigna a los elementos permitiendo que estos crezcan hasta ocupar todo el espacio disponible en el eje principal</p>
+			<code class="code">
+				<span class="selector">
+				.elemento </span>{
+					<span class="property">flex-grow</span>: <span class="value">1</span>;
+				}
+			</code>
+			<code class="code">
+				<span class="selector">
+				.elemento3 </span>{
+					<span class="property">flex-grow</span>: <span class="value">3</span>;
+				}
+			</code>
+			<div class="container-flex flex-content17">
+				<div class="element element-flex17">1</div>
+				<div class="element element-flex17">2</div>
+				<div class="element element-flex17">3</div>
+				<div class="element element-flex17">4</div>
+			</div>
+		</section>
+		<!-- <section>
+			<h2 class="main-subtitle">flex-shrink</h2>
+			<p>Se le asigna a los elementos permitiendo que estos se reduzcan en el eje principal</p>
+			<code class="code">
+				<span class="selector">
+				.elemento </span>{
+					<span class="property">flex-shrink</span>: <span class="value">1</span>;
+				}
+			</code>
+			<code class="code">
+				<span class="selector">
+				.elemento3 </span>{
+					<span class="property">flex-shrink</span>: <span class="value">3</span>;
+				}
+			</code>
+			<div class="container-flex flex-content18">
+				<div class="element element-flex18">1</div>
+				<div class="element element-flex18">2</div>
+				<div class="element element-flex18">3</div>
+				<div class="element element-flex18">4</div>
+			</div>
+		</section> -->
 			
-			
-		
-		<!-- final -->
 		<section class="section-additional">
 			<h2 class="">Adicionales</h2> 
 			<p>* Video recomendado para entender Flexbox: <a target="_blank" class="link" href="https://www.youtube.com/watch?v=_YUJ37FARrU">Link</a></p>
