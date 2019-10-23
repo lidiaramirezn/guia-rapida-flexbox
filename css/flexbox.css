@@ -273,6 +273,7 @@
 			margin: 20px 0 50px;
 		}
 
+		.section-cases h2,
 		.section-additional h2 {
 			font-size: 2em;
 		}
@@ -281,6 +282,11 @@
 			color: #007db5;
 			font-weight: 600;
 			margin: 0 3px;
+		}
+
+		.container-flex.flex-content-case1 {
+			justify-content: center;
+			align-items: center;
 		}
 
 		@media screen and (min-width: 768px) {

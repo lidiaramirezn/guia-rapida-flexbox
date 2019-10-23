@@ -4,8 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Guía Rápida | Flexbox</title>
-	<link rel="icon" type="image/png" href="/assets/icon/css3.png">
+	<title>Guía Rápida | Flexbox</title>	
 	<meta name="title" content="Guía Rápida de Flexbox">
 	<meta name="description" content="Guía de propiedades más relevantes de Flexbox."/>
 	<meta property="og:title" content="Guía Rápida de Flexbox" />
@@ -15,6 +14,7 @@
 	<meta name="twitter:description" content="Guía de propiedades más relevantes de Flexbox.">
 	<meta property="twitter:card" content="summary_large_image">
 	<meta name="twitter:image" content="img/git.png">
+	<link rel="icon" href="assets/icon/css3.png">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/flexbox.css">
@@ -399,7 +399,29 @@
 				<div class="element element-flex18">4</div>
 			</div>
 		</section> -->
-			
+		<section class="section-cases">
+			<h2>flex-basis</h2>
+			<p>Especifica el tamaño inicial del elemento en el eje principal</p>
+			<code class="code">
+				<span class="selector">
+				.elemento </span>{
+					<span class="property">flex-grow</span>: <span class="value">3</span>;
+				}
+			</code>
+		</section>
+		<section>
+			<h2>Casos más usados</h2>
+			<p>Para centrar horizontal y verticalmente elementos</p>
+			<code class="code">
+				<span class="selector">
+				.contenedor </span>{
+					<span class="property">flex-justify</span>: <span class="value">center</span>;
+				}
+			</code>
+			<div class="container-flex flex-content-case1">
+				<div class="element">1</div>
+			</div>
+		</section>
 		<section class="section-additional">
 			<h2 class="">Adicionales</h2> 
 			<p>* Video recomendado para entender Flexbox: <a target="_blank" class="link" href="https://www.youtube.com/watch?v=_YUJ37FARrU">Link</a></p>
