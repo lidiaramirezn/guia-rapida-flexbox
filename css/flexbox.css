@@ -1,4 +1,4 @@
-		.contenedor { 
+		.container-flex { 
 			width: 300px;
 			height: 200px;
 			background: #FFF;
@@ -7,7 +7,7 @@
 			margin: 10px auto;
 		}
 
-		.elemento {
+		.element {
 			color: #FFF;
 			margin: 5px;
 			background: #E67E22;
@@ -31,15 +31,15 @@
 
 		.flex-content2 {
 			display: flex;
-			/* Si un elemento no cabe lo baja si es wrap, si es no-wrap se ajusta a una linea no respeta el ancho y no los centra, va de izquierda a derecha*/
+			/* Si un element no cabe lo baja si es wrap, si es no-wrap se ajusta a una linea no respeta el ancho y no los centra, va de izquierda a derecha*/
 			/* flex-wrap: no-wrap | wrap | wrap-reverse */
 			flex-wrap: wrap;
-			height: 150px;
+			height: 120px;
 		}
 
 		.element-flex2 {
-			width: 200px;
-			height: 30px;
+			width: 100px;
+			height: 20px;
 		}
 		
 		.flex-content3 {
@@ -50,8 +50,8 @@
 		}
 
 		.element-flex3 {
-			width: 150px;
-			height: 30px;
+			width: 100px;
+			height: 20px;
 		}
 
 		.flex-content4 {
@@ -77,7 +77,7 @@
 			height: 30px;
 		}
 
-		.contenedor.flex-content6 {
+		.container-flex.flex-content6 {
 			display: flex;
 			justify-content: space-around;
 			height: 120px;
@@ -90,7 +90,7 @@
 			margin: 0;
 		}
 		
-		.contenedor.flex-content7 {
+		.container-flex.flex-content7 {
 			display: flex;
 			justify-content: space-between;
 			height: 120px;
@@ -103,7 +103,7 @@
 			margin: 0;
 		}
 
-		.contenedor.flex-content8 {
+		.container-flex.flex-content8 {
 			display: flex;
 			justify-content: space-evenly;
 			height: 120px;
@@ -116,7 +116,7 @@
 			margin: 0;
 		}
 
-		.contenedor.flex-content9 {
+		.container-flex.flex-content9 {
 			display: flex;
 			height: 120px;
 			padding: 5px 0;
@@ -128,7 +128,7 @@
 			height: 30px;
 		}
 
-		.contenedor.flex-content10 {
+		.container-flex.flex-content10 {
 			display: flex;
 			height: 120px;
 			padding: 5px 0;
@@ -140,7 +140,7 @@
 			height: 30px;
 		}
 
-		.contenedor.flex-content11 {
+		.container-flex.flex-content11 {
 			display: flex;
 			height: 120px;
 			padding: 5px 0;
@@ -151,7 +151,7 @@
 			width: 30px;
 		}
 
-		.contenedor.flex-content12 {
+		.container-flex.flex-content12 {
 			display: flex;
 			height: 170px;
 			padding: 5px 0;
@@ -163,7 +163,7 @@
 			height: 20px;
 		}
 
-		.contenedor.flex-content13 {
+		.container-flex.flex-content13 {
 			display: flex;
 			height: 120px;
 			padding: 5px 0;
@@ -176,7 +176,7 @@
 			height: 30px;			
 		}
 
-		.contenedor.flex-content13::before {
+		.container-flex.flex-content13::before {
 			content: "";
 			position: absolute;
 			width: 100%;
@@ -193,6 +193,47 @@
 			height: 40px;
 		}
 
+		.container-flex.flex-content14 {
+			display: flex;
+			flex-wrap: wrap;
+			height: 170px;
+			padding: 5px 0;
+			position: relative;
+			align-content: flex-end;
+		}
+
+		.element-flex14 {
+			width: 200px;
+			height: 20px;			
+		}
+
+		.container-flex.flex-content15 {
+			display: flex;
+			flex-wrap: wrap;
+			height: 170px;
+			padding: 5px 0;
+			position: relative;
+			align-content: center;
+		}
+
+		.element-flex15 {
+			width: 200px;
+			height: 20px;			
+		}
+
+		.container-flex.flex-content16 {
+			display: flex;
+			flex-wrap: wrap;
+			height: 170px;
+			padding: 5px 0;
+			position: relative;
+			align-content: space-around;
+		}
+
+		.element-flex16 {
+			width: 200px;
+			height: 20px;			
+		}
 
 		.section-additional {
 			margin: 20px 0 50px;
@@ -209,8 +250,34 @@
 		}
 
 		@media screen and (min-width: 768px) {
-			.contenedor {
+			.container-flex {
 				width: 500px; 
 				margin: 10px 0;
+			}
+
+			.flex-content3 {
+				height: 150px;
+			}
+
+			.container-flex.flex-content14,
+			.container-flex.flex-content15,
+			.container-flex.flex-content16 {
+				height: 120px;
+			}
+
+			.flex-content2 {
+				height: 120px;	
+			}
+
+			.element-flex2 {
+				width: 200px;
+			}
+
+			.flex-content3 { 
+				height: 170px;
+			}
+
+			.element-flex3 {
+				width: 200px;
 			}
 		}
