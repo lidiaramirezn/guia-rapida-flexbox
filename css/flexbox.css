@@ -168,16 +168,34 @@
 			height: 120px;
 			padding: 5px 0;
 			align-items: baseline;
+			position: relative;
 		}
 
 		.element-flex13 {
 			width: 30px;
-			height: 30px;
+			height: 30px;			
+		}
+
+		.contenedor.flex-content13::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			border: 1px dashed #2C3E50;
+			left: 0;
+			top: 27px;
+		}
+
+		.element-flex13:nth-child(2) {
+			height: 25px;
+		}
+
+		.element-flex13:nth-child(3) {
+			height: 40px;
 		}
 
 
 		.section-additional {
-			margin: 20px 0;
+			margin: 20px 0 50px;
 		}
 
 		.section-additional h2 {

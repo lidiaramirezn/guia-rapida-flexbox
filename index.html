@@ -24,21 +24,25 @@
 	<div class="container">
 		<main class="main">
 			<div class="main-definition">
-					<p class="main-description">Flexbox proporciona una forma más eficiente de alinear y distribuir items dentro de un contenedor de acuerdo a sus ejes</p>
-				<img class="main-definition-img" src="assets/img/flex-direction.png" alt="">
+					<p class="main-description">Flexbox proporciona una forma más eficiente de alinear y distribuir <strong>items</strong> dentro de un <strong>contenedor</strong> de acuerdo a sus <strong>ejes</strong> </p>
+				<img class="main-definition-img main-definition-img1" src="assets/img/flex-direction.png" alt="">
 				<p class="main-description">Dentro de los componentes del flex tenemos: 
 					<ul>
-						<li>- Flex container</li>
-						<li>- Flex Items<li>
-						<li>- Ejes: main axis <strong>(eje principal)</strong>, cross axis <strong>(eje secundario)</strong>, main size, cross size, main start, main end, cross start, cross end</li>
+						<li>- Flex container: Contenedor</li>
+						<li>- Flex Items: Elementos<li>
+						<li>- Ejes: Que son <strong style="color: #c14747">main axis</strong> <strong>(eje principal)</strong> y
+												<strong style="color: #c14747">cross axis</strong> <strong>(eje secundario)</strong>.
+												Y para complementar
+												<strong style="color: #0f8a0f">main size, cross size</strong>, 
+												<strong style="color: #2e19e6">main start, main end, cross start, cross end</strong> </li>
 					</ul>
 				</p>
-				<img  class="main-definition-img" src="assets/img/flex-components.jpg" alt="">				
+				<img  class="main-definition-img main-definition-img2" src="assets/img/flex-components.jpg" alt="">				
 			</div>
 		</main>
 		<section>
 			<h2 class="main-subtitle">Flex container</h2>
-			<p>Se debe definir si el padre contenedor trabajará en bloque o línea</p>
+			<p>Para utilizar flexbox siempre se debe definir si el padre contenedor trabajará en bloque o línea</p>
 			<code class="code">
 				<span class="selector">.container </span>
 				{
@@ -54,7 +58,7 @@
 		</section>
 		<section>
 			<h2 class="main-subtitle">flex-direction</h2>
-			<p>Permite establecer la dirección del eje principal. Su valor predeterminado es flex-direction: row</p>
+			<p>Permite establecer la dirección del eje principal. Su valor predeterminado es flex-direction: row. Pero existen otras opciones:</p>
 			<code class="code">
 				<span class="selector">
 				.container </span>{
@@ -89,56 +93,14 @@
 				</div>
 			</div>
 		</section>
-		<section>
-			<h2 class="main-subtitle">flex-wrap</h2>
-			<p>Su valor predeterminado de flex-wrap es nowrap</p>
-			<p>- <strong>wrap:</strong> Permite determinar si puede saltar de línea los elementos si no encaja en una línea, respetando los tamaños de los items. </p>
-			<p>- <strong>nowrap:</strong> No salta de línea pero redimensiona los items haciendo encajar en una línea.</p>
-			<p>- <strong>wrap-reverse:</strong> Las filas son opuestas más no los items.</p>
-			<code class="code">
-				<span class="selector">
-				.container </span>{
-					<span class="property">flex-wrap</span>: <span class="value">nowrap</span>;
-				}
-			</code>
-			<code class="code">
-				<span class="selector">
-				.container </span>{
-					<span class="property">flex-wrap</span>: <span class="value">wrap</span>;
-				}
-			</code>			
-			<code class="code">
-				<span class="selector">
-				.container </span>{
-					<span class="property">flex-wrap</span>: <span class="value">wrap-reverse</span>;
-				}
-			</code>	
-			<p>Ejemplo: flex-wrap: wrap</p>
-			<div class="contenedor flex-content2">
-				<div class="elemento element-flex2">1</div>
-				<div class="elemento element-flex2">2</div>
-				<div class="elemento element-flex2">3</div>
-				<div class="elemento element-flex2">4</div>
-			</div>
-		</section>		
-		<section>
-			<h2 class="main-subtitle">flex-flow</h2>
-			<p>Es el shorthand de flex-direction y flex-wrap. El valor por defecto es flex-flow: row nowrap</p>
-			<p>Ejemplo: flex-flow: row wrap-reverse</p>
-			<div class="contenedor flex-content3">
-				<div class="elemento element-flex3">1</div>
-				<div class="elemento element-flex3">2</div>
-				<div class="elemento element-flex3">3</div>
-				<div class="elemento element-flex3">4</div>
-			</div>
-		</section>
+		
 		<section>
 			<h2 class="main-subtitle">justify-content</h2>
-			<p>Alinea los items en el eje principal que estan dentro de un contenedor. El valor por defecto es justify-content: flex-start</p>
+			<p>Alinea los items en el <strong>eje principal</strong> que estan dentro de un contenedor. El valor por defecto es justify-content: flex-start. Otras opciones:</p>
 			<div class="example">
 				<code class="code">
 					<span class="selector">
-					.container </span>{
+						.container </span>{
 						<span class="property">justify-content</span>: <span class="value">flex-end</span>;
 					}
 				</code>
@@ -164,13 +126,14 @@
 				</div>
 			</div>
 			<div class="example">
-				<p>Los elementos se distribuyen uniformemente con igual espacio a su alrededor.</p>
-				<code class="code">
+				<p>Los elementos se distribuyen uniformemente con igual espacio a su <strong>alrededor</strong>.</p>
+				<code class="code">					
 					<span class="selector">
-					.container </span>{
-						<span class="property">justify-content</span>: <span class="value">space-around</span>;
-					}
+						.container </span>{
+							<span class="property">justify-content</span>: <span class="value">space-around</span>;
+						}
 				</code>	
+				
 				<div class="contenedor flex-content6">
 					<div class="elemento element-flex6">1</div>
 					<div class="elemento element-flex6">2</div>
@@ -183,7 +146,7 @@
 					</div>
 			</div>
 			<div class="example">
-				<p>Los elementos se distribuyen uniformemente entre elementos.  El primer elemento se coloca al inicio, el último elemento al final</p>
+				<p>Los elementos se distribuyen uniformemente entre elementos. Pero el primer elemento se coloca al inicio, el último elemento al final</p>
 				<code class="code">
 					<span class="selector">
 					.container </span>{
@@ -208,7 +171,7 @@
 						<span class="property">justify-content</span>: <span class="value">space-evenly</span>;
 					}
 				</code>
-				<p>Los elementos se distribuyen de modo que el espacio entre los elementos sea igual.</p>
+				<p>Los elementos se distribuyen de modo que el espacio entre estos sea igual.</p>
 				<div class="contenedor flex-content8">
 					<div class="elemento element-flex8">1</div>
 					<div class="elemento element-flex8">2</div>
@@ -219,7 +182,7 @@
 		</section>	
 		<section>
 			<h2 class="main-subtitle">align-items</h2>
-			<p>Alinea los items en el eje secundario. El valor por defecto es align-items: flex-start </p>
+			<p>Alinea los items en el eje secundario. El valor por defecto es align-items: flex-start. Otras opciones: </p>
 			<div class="example">
 				<code class="code">
 					<span class="selector">
@@ -262,15 +225,18 @@
 					<div class="elemento element-flex11">3</div>
 					<div class="elemento element-flex11">4</div>
 				</div>
-
 				<code class="code">
 					<span class="selector">
 					.container </span>{
 						<span class="property">flex-direction</span>: <span class="value">column </span>;&nbsp;
-						
-						<span class="property">align-items</span>: <span class="value">stretch</span>;
 					}
 				</code>
+				<code class="code">
+						<span class="selector">
+						.container </span>{
+							<span class="property">align-items</span>: <span class="value">stretch</span>;
+						}
+					</code>
 				<div class="contenedor flex-content12">
 					<div class="elemento element-flex12">1</div>
 					<div class="elemento element-flex12">2</div>
@@ -279,6 +245,7 @@
 				</div>
 			</div>
 			<div class="example">
+				<p>Se alinea según la base del contenido de los ítems.</p>
 				<code class="code">
 					<span class="selector">
 					.container </span>{
@@ -294,6 +261,49 @@
 			</div>
 		</section>
 		<section>
+				<h2 class="main-subtitle">flex-wrap</h2>
+				<p>Su valor predeterminado de flex-wrap es nowrap</p>
+				<p>- <strong>wrap:</strong> Permite determinar si puede saltar de línea los elementos si no encaja en una línea, respetando los tamaños de los items. </p>
+				<p>- <strong>nowrap:</strong> No salta de línea pero redimensiona los items haciendo encajar en una línea.</p>
+				<p>- <strong>wrap-reverse:</strong> Las filas son opuestas más no los items.</p>
+				<code class="code">
+					<span class="selector">
+					.container </span>{
+						<span class="property">flex-wrap</span>: <span class="value">nowrap</span>;
+					}
+				</code>
+				<code class="code">
+					<span class="selector">
+					.container </span>{
+						<span class="property">flex-wrap</span>: <span class="value">wrap</span>;
+					}
+				</code>			
+				<code class="code">
+					<span class="selector">
+					.container </span>{
+						<span class="property">flex-wrap</span>: <span class="value">wrap-reverse</span>;
+					}
+				</code>	
+				<p>Ejemplo: flex-wrap: wrap</p>
+				<div class="contenedor flex-content2">
+					<div class="elemento element-flex2">1</div>
+					<div class="elemento element-flex2">2</div>
+					<div class="elemento element-flex2">3</div>
+					<div class="elemento element-flex2">4</div>
+				</div>
+			</section>		
+			<section>
+				<h2 class="main-subtitle">flex-flow</h2>
+				<p>Es el shorthand de flex-direction y flex-wrap. El valor por defecto es flex-flow: row nowrap</p>
+				<p>Ejemplo: flex-flow: row wrap-reverse</p>
+				<div class="contenedor flex-content3">
+					<div class="elemento element-flex3">1</div>
+					<div class="elemento element-flex3">2</div>
+					<div class="elemento element-flex3">3</div>
+					<div class="elemento element-flex3">4</div>
+				</div>
+			</section>
+		<section>
 			<h2 class="main-subtitle">align-content</h2>
 			<p>Alinea los las líneas. El valor por defecto es </p>
 		</section>		
@@ -301,9 +311,10 @@
 		<!-- final -->
 		<section class="section-additional">
 			<h2 class="">Adicionales</h2> 
-			<p>* Video muy recomendado para entender Flexbox: <a target="_blank" class="link" href="https://www.youtube.com/watch?v=_YUJ37FARrU">Link</a></p>
-			<p>* Guía muy completa en inglés: <a target="_blank" class="link" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Link</a></p>
-
+			<p>* Video recomendado para entender Flexbox: <a target="_blank" class="link" href="https://www.youtube.com/watch?v=_YUJ37FARrU">Link</a></p>
+			<p>* Guía de Flexbox completa en inglés: <a target="_blank" class="link" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Link</a></p>
+			<p>* Para experimentar opciones de Flexbox: <a class="link" href="https://flexbox.help/">Link</a></p>
+			<p>* Juego para aprender Flexbox: <a class="link" href="https://flexboxfroggy.com/#es">Link</a></p>
 		</section>
 	</div>
 	

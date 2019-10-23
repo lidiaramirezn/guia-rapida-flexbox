@@ -67,13 +67,23 @@ h1, h2, h3 {
   font-size: 1.2em;
 }
 
+.container {
+  font-size: 14px;
+}
+
 @media screen and (min-width: 760px) {
+
+  .header ul {
+    padding: 0 10px;
+  }
+
   .header-left img {
     width: 40px;
   }
 
   .header-left .text {
-    font-size: 2.4em;    
+    font-size: 2.4em;   
+    margin-left: 5px;
   }
 }
 
@@ -91,8 +101,8 @@ h1, h2, h3 {
 }
 
 .main-title {
-  font-weight: 300;
-  font-size: 2em;
+  font-weight: 400;
+  font-size: 1.5em;
 }
 
 .main-img {
@@ -108,9 +118,28 @@ h1, h2, h3 {
 
 .main-subtitle {
   font-size: 1.2em;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   margin: 15px auto 10px;
-  border-bottom: 2px solid #2c3e50;
+  position: relative;
+}
+
+.main-subtitle::after,
+.main-subtitle::before {
+  content: "";
+  position: absolute;
+  height: 6px;
+  background: #FFB84F;
+  bottom: 0;
+}
+
+.main-subtitle::after {
+  left: 0;
+  width: 40px;
+}
+
+.main-subtitle::before {
+  left: 50px;
+  width: 15px;
 }
 
 .code {
@@ -127,22 +156,30 @@ h1, h2, h3 {
 .selector {
   font-family: inherit;
   color: #FFB84F;
+  padding-right: 5px;
 }
 
 .property {
   font-family: inherit;
   color: #5E9BC6;
+  padding-left: 5px;
+  padding-right: 3px;
 }
 
 .value {
   font-family: inherit;
   color: #D37754;
+  padding-left: 5px;
 }
 
 @media (min-width: 768px) {
-  .container { max-width: 760px; }
-  .main-definition-img { max-width: 450px;}
-  .main-description { margin: 20px auto; }
+  .container { max-width: 760px; font-size: 16px; }  
+  .main-definition-img1 { max-width: 380px; }
+  .main-definition-img2 { max-width: 480px; }
+  .main-description { margin: 20px auto 10px; }
+  .main-title {
+    font-size: 2em;
+  }
 }
 
 @media screen and (min-width: 1366px) {
