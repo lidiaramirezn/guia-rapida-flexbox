@@ -1,0 +1,16 @@
+.example03 {
+  background: darkgoldenrod;
+  font-size: 3em;
+  display: flex;
+}
+
+.item {
+  border: 1px solid darkmagenta;
+  flex-shrink: 1;
+  width: 500px;
+}
+
+.item:nth-child(3) {
+  flex-shrink: 5;
+  background: cadetblue;
+}

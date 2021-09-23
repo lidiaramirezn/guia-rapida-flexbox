@@ -1,0 +1,18 @@
+.paragraph {
+  font-size: 1.5em;
+}
+
+.example02 {
+  background: darkgoldenrod;
+  font-size: 3em;
+  display: flex;
+}
+
+.item {
+  background: darkmagenta;
+  flex-grow: 0.5;
+}
+
+.item:nth-child(even) {
+  background: cadetblue;
+}
